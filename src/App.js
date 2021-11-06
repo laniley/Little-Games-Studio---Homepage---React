@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
 import TopNavBar from './components/TopNavBar.js';
+import About from './components/About.js';
 
 function App() {
     return (
@@ -15,7 +16,7 @@ function App() {
 
             <div className="container-fluid">
                 <div className="row justify-content-center align-items-center">
-                    {/* {{ outlet }} */}
+                    < About />
                 </div>
             </div>
 
