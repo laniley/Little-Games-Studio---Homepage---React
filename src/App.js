@@ -1,26 +1,40 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
+
+import TopNavBar from './components/TopNavBar.js';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            {/*  needed for Facebook SDK */}
+            <div id="fb-root"></div>
+
+            <TopNavBar />
+
+            <div className="container-fluid">
+                <div className="row justify-content-center align-items-center">
+                    {/* {{ outlet }} */}
+                </div>
+            </div>
+
+            <nav id="secondary-navbar" className="navbar fixed-top navbar-light bg-light">
+                <ul className="nav navbar-nav ml-auto">
+                    <li className="nav-item">
+                        <div
+                            className="fb-like"
+                            data-href="https://www.facebook.com/Little-Games-Studio-200691990513558/"
+                            data-layout="button_count"
+                            data-size="large"
+                            data-action="like"
+                            data-share="true" />
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    );
 }
 
 export default App;
