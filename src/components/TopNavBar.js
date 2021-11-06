@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link, useMatch } from 'react-router-dom';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -12,7 +14,7 @@ function TopNavBar() {
             id="top-navbar"
             className="navbar navbar-expand-lg fixed-top navbar-dark">
 
-            <Navbar.Brand className="navbar-brand" href="/">
+            <Navbar.Brand className="navbar-brand" as={Link} to="/">
                 <img src={img_logo} alt="Little Games Studio Logo" />
             </Navbar.Brand>
             
@@ -20,13 +22,31 @@ function TopNavBar() {
 
             <Navbar.Collapse id="navbarSupportedContent" className="collapse navbar-collapse">
                 <Nav className="mr-auto">
-                    <Nav.Link href="/">Games</Nav.Link>
-                    <Nav.Link href="/about">About</Nav.Link>
-                    {/* <Nav.Link href="/blog">Blog</Nav.Link> */}
+                    <CustomLink
+                        activeOnlyWhenExact={true}
+                        to="/"
+                        label="Games"
+                    />
+                    <CustomLink
+                        to="/about"
+                        label="About" />
                 </Nav>
             </Navbar.Collapse>
 
         </Navbar>
+    );
+}
+
+function CustomLink({ label, to, activeOnlyWhenExact }) {
+    let match = useMatch({
+        path: to,
+        exact: activeOnlyWhenExact
+    });
+
+    return (
+        <div className={match ? "active" : ""}>
+            <Nav.Link as={Link} to={to}>{label}</Nav.Link>
+        </div>
     );
 }
 
