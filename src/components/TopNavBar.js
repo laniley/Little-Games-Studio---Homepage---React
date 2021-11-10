@@ -44,9 +44,7 @@ function CustomLink({ label, to, activeOnlyWhenExact }) {
     });
 
     return (
-        <div className={match ? "active" : ""}>
-            <Nav.Link as={Link} to={to}>{label}</Nav.Link>
-        </div>
+        <Nav.Link as={Link} to={to} className={match ? "active" : ""}>{label}</Nav.Link>
     );
 }
 
