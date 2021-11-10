@@ -1,3 +1,12 @@
+<p align="center">
+  	<a href="https://img.shields.io/librariesio/github/laniley/Little-Games-Studio---Homepage---React">
+  		<img alt="Dependency Status" src="https://img.shields.io/librariesio/github/laniley/Little-Games-Studio---Homepage---React">
+	</a>
+  	<a href="http://opensource.org/licenses/MIT">
+	  	<img alt="MIT License" src="https://img.shields.io/npm/l/express.svg">
+	</a>
+</p>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
