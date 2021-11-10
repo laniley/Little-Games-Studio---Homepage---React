@@ -12,12 +12,12 @@ function Games() {
             <div class="row justify-content-center align-items-center game-links">
                 <div class="col-12 col-md-6 col-lg-4 game-link">
                     <div class="card text-center">
-                        <img class="card-img-top" src={img_little_rocket} />
+                        <img class="card-img-top" src={img_little_rocket} alt="Little Rocket Logo"/>
                         <div class="card-body">
                             <h3 class="card-title">Little Rocket</h3>
                             <p class="card-text">Just fly as far as you can and don't get hit by the asteroids.</p>
                             <p>
-                                <a href="https://littlerocket-game.com" class="btn btn-primary">PLAY IN BROWSER</a>
+                                <a href="http://little-games-studio.de/games/little-rocket/" class="btn btn-primary">PLAY IN BROWSER</a>
                             </p>
                             {/* <p class="app-market-links">
                                 <div class="app-market-badge">
