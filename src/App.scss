@@ -2,6 +2,16 @@
 @import "styles/_colors";
 @import "styles/_fonts";
 
+html, body, #root, .App {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 body {
   font-family: sister, sans-serif;
   font-size: 1.3rem;
@@ -9,7 +19,6 @@ body {
   text-align: center;
   color: $font-color;
   background: $bg-color none repeat scroll 0% 0%;
-  padding-top: 70px;
 }
 
 button:focus { outline: 0; }
@@ -20,24 +29,6 @@ button:focus { outline: 0; }
 
 .fb_iframe_widget.fb-like {
   padding-right: 10px;
-}
-
-.main-content {
-  margin-top: 40px;
-}
-
-.game-link {
-  margin-bottom: 20px;
-  img {
-    max-width: 100%;
-  }
-  .links {
-    display: flex;
-    justify-content: center;
-  }
-  a {
-    font-size: 1.6rem;
-  }
 }
 
 .app-market-links {

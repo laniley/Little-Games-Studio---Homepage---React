@@ -1,0 +1,16 @@
+.game-link {
+    .card {
+        padding: 10px;
+    }
+    min-width: 350px;
+    img {
+        max-width: 100%;
+    }
+    .links {
+        display: flex;
+        justify-content: center;
+    }
+    a {
+        font-size: 1.6rem;
+    }
+}
