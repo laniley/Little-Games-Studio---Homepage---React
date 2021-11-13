@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
@@ -7,7 +7,8 @@ import './App.scss';
 import TopNavBar from './components/TopNavBar.js';
 import Layout from './components/Layout.js';
 import About from './components/About.js';
-import Games from './components/Games.js';
+import Games from './components/Games';
+import LittleRocket from './components/Games/LittleRocket';
 
 function App() {
     return (
@@ -19,9 +20,12 @@ function App() {
 
             <Routes>
                 <Route path='/' element={<Layout />} >
-                    <Route index element={<Games />} />
-                    <Route path='/games' element={<Games />} />
-                    <Route path='/about' element={<About />} />
+                    <Route index element={<Navigate to="/games" />} />
+                    <Route path='games' >
+                        <Route index element={<Games />} />
+                        <Route path='little-rocket' element={<LittleRocket />} />
+                    </Route>
+                    <Route path='about' element={<About />} />
                 </Route>
             </Routes>
 

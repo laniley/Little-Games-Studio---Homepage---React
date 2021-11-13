@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Games.scss';
 
-import img_little_rocket from './../img_little_rocket.png';
+import img_little_rocket from './../../images/img_little_rocket.png';
 
 function Games() {
     return (
@@ -20,7 +22,7 @@ function Games() {
                             <h3 className="card-title">Little Rocket</h3>
                             <p className="card-text">Just fly as far as you can and don't get hit by the asteroids.</p>
                             <p>
-                                <a href="http://little-games-studio.de/games/little-rocket/" className="btn btn-primary">PLAY IN BROWSER</a>
+                                <Link to="/games/little-rocket/" className="btn btn-primary">PLAY IN BROWSER</Link>
                             </p>
                             {/* <p class="app-market-links">
                                 <div class="app-market-badge">

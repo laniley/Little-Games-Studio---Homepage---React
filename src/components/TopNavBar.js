@@ -14,7 +14,7 @@ function TopNavBar() {
             id="top-navbar"
             className="navbar navbar-expand-lg fixed-top navbar-dark">
 
-            <Navbar.Brand className="navbar-brand" as={Link} to="/">
+            <Navbar.Brand className="navbar-brand" as={Link} to="/games">
                 <img src={img_logo} alt="Little Games Studio Logo" />
             </Navbar.Brand>
             
@@ -23,8 +23,8 @@ function TopNavBar() {
             <Navbar.Collapse id="navbarSupportedContent" className="collapse navbar-collapse">
                 <Nav className="mr-auto">
                     <CustomLink
-                        activeOnlyWhenExact={true}
-                        to="/"
+                        /* activeOnlyWhenExact={true} */
+                        to="/games"
                         label="Games"
                     />
                     <CustomLink
