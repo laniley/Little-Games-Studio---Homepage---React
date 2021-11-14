@@ -39,7 +39,7 @@ function TopNavBar() {
 
 function CustomLink({ label, to, activeOnlyWhenExact }) {
     let match = useMatch({
-        path: to,
+        path: to + '/*',
         exact: activeOnlyWhenExact
     });
 
