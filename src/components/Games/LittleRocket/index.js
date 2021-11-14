@@ -9,7 +9,7 @@ class LittleRocket extends React.Component {
                 id="little-rocket"
                 title="little-rocket"
                 name="little-rocket"
-                src="http://little-games-studio.com/games/little-rocket/"
+                src="https://little-games-studio.com/games/little-rocket/"
                 width="100%"
                 height="100%"
                 scrolling="no"
