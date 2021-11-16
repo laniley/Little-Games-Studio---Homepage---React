@@ -1,7 +1,7 @@
 import React from 'react';
 
-import img_melanie from './../img_melanie.jpg';
-import img_cats from './../img_cats.jpg';
+import img_melanie from './img_melanie.jpg';
+import img_cats from './img_cats.jpg';
 
 function About() {
     return (

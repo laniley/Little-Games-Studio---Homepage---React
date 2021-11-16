@@ -6,7 +6,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 import './TopNavBar.scss';
 
-import img_logo from './../img_logo.png';
+import img_logo from './img_logo.png';
 
 function TopNavBar() {
     return (

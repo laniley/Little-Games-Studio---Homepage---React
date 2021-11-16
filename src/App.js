@@ -4,9 +4,9 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
-import TopNavBar from './components/TopNavBar.js';
+import TopNavBar from './components/TopNavBar';
 import Layout from './components/Layout.js';
-import About from './components/About.js';
+import About from './components/About';
 import Games from './components/Games';
 import LittleRocket from './components/Games/LittleRocket';
 
