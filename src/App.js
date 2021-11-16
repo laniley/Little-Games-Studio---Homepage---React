@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route, Routes, Navigate } from 'react-router-dom';
 
+import ReactGA from 'react-ga';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
 
@@ -11,6 +13,10 @@ import Games from './components/Games';
 import LittleRocket from './components/Games/LittleRocket';
 
 function App() {
+
+    ReactGA.initialize('UA-66507473-3');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
     return (
         <div className="App">
             {/*  needed for Facebook SDK */}
