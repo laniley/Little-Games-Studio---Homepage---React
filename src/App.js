@@ -20,8 +20,6 @@ function App() {
 
     return (
         <div className="App">
-            {/*  needed for Facebook SDK */}
-            <div id="fb-root"></div>
 
             <TopNavBar />
 
@@ -35,20 +33,6 @@ function App() {
                     <Route path='about' element={<About />} />
                 </Route>
             </Routes>
-
-            {/* <nav id="secondary-navbar" className="navbar fixed-top navbar-light bg-light">
-                <ul className="nav navbar-nav ml-auto">
-                    <li className="nav-item">
-                        <div
-                            className="fb-like"
-                            data-href="https://www.facebook.com/Little-Games-Studio-200691990513558/"
-                            data-layout="button_count"
-                            data-size="large"
-                            data-action="like"
-                            data-share="true" />
-                    </li>
-                </ul>
-            </nav> */}
 
 {/*             <CookieConsent
                 location="bottom"
