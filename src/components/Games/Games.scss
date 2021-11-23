@@ -1,10 +1,12 @@
+
 .game-link {
     .card {
         padding: 10px;
     }
     min-width: 400px;
+    max-width: 95%;
     img {
-        max-width: 95%;
+        max-width: 100%;
     }
     .links {
         display: flex;
